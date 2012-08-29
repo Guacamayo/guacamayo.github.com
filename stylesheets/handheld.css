@@ -1,0 +1,4 @@
+@import 'stylesheet.css';
+
+#header {position:relative; top:5px; left:5px }
+#content {position:relative; left:20px; width:100%}
