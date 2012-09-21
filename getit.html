@@ -36,6 +36,29 @@
 	numbers for pre-release snapshots).
       </p>
 
+      <h1>Ready-made images</h1>
+      <p>
+	Selection of ready-made images can be found in
+	our <a href='https://github.com/Guacamayo/meta-guacamayo/downloads'>download
+	area</a>, compressed with the xz utility. The images are of the
+	following types:
+        <ul>
+	  <li>
+	    hddimg: USB-dongle image,
+	  </li>
+	  <li>
+	    rpi-sdimg: SD card image for RaspberryPi.
+	  </li>
+	</ul>
+
+	Once you download an image, it needs to be written directly to the disk,
+	e.g., using the dd command:
+<pre>xzcat guacamayo-image{whatever}.hddimg.xz | dd of=/dev/{thediskdevice}
+</pre>
+        NB: these are complete disk images, so they need to be written to a
+        device (e.g. /dev/sdh), not to a partition (e.g., not /dev/sdh1).
+      </p>
+
       <h1>Source code repository</h1>
       <p>
 	Developers interested in tracking Guacamayo development as it happens
